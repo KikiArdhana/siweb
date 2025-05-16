@@ -102,6 +102,14 @@ export default function DashboardSkeleton() {
   );
 }
 
+export function CustomerSkeleton() {
+  return (
+    <div
+      className={`${shimmer} relative h-6 w-40 rounded bg-gray-200 overflow-hidden`}
+    />
+  );
+}
+
 export function TableRowSkeleton() {
   return (
     <tr className="w-full border-b border-gray-100 last-of-type:border-none [&:first-child>td:first-child]:rounded-tl-lg [&:first-child>td:last-child]:rounded-tr-lg [&:last-child>td:first-child]:rounded-bl-lg [&:last-child>td:last-child]:rounded-br-lg">
@@ -138,6 +146,8 @@ export function TableRowSkeleton() {
     </tr>
   );
 }
+
+
 
 export function InvoicesMobileSkeleton() {
   return (
